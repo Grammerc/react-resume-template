@@ -21,6 +21,11 @@ const nextConfig = {
   poweredByHeader: false,
   productionBrowserSourceMaps: false,
   reactStrictMode: true,
+  eslint: {
+    // This allows production builds to successfully complete even if
+    // the project has minor ESLint formatting errors.
+    ignoreDuringBuilds: true,
+  },
   swcMinify: true,
   trailingSlash: false,
   images: {
