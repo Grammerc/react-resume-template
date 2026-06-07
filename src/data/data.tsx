@@ -8,23 +8,13 @@ import {
   SparklesIcon,
 } from '@heroicons/react/24/outline';
 
+import FacebookIcon from '../components/Icon/FacebookIcon';
 import GithubIcon from '../components/Icon/GithubIcon';
-import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
-import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
-import TwitterIcon from '../components/Icon/TwitterIcon';
-import heroImage from '../images/header-background.webp';
+import heroImage from '../images/header-background.jpg';
 import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
 import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
 import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
-import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
-import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
-import porfolioImage6 from '../images/portfolio/portfolio-6.jpg';
-import porfolioImage7 from '../images/portfolio/portfolio-7.jpg';
-import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
-import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
-import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
-import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
 import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';
 import {
@@ -69,18 +59,16 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm Tim Baker.`,
+  name: `I'm Raphael Matthew E. Perocho.`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Victoria based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
-        at <strong className="text-stone-100">Instant Domains</strong> helping build a modern, mobile-first, domain
-        registrar and site builder.
+        I'm a Cebu-based <strong className="text-stone-100">Computer Engineering student</strong> focusing on Full Stack web development, embedded systems, and database management, currently studying at <strong className="text-stone-100">Cebu Institute of Technology - University</strong>.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me training in <strong className="text-stone-100">Muay Thai</strong>,
-        plucking my <strong className="text-stone-100">banjo</strong>, or exploring beautiful{' '}
-        <strong className="text-stone-100">Vancouver Island</strong>.
+        In my free time time, you can catch me hitting the court for <strong className="text-stone-100">Pickleball</strong>,
+        working on <strong className="text-stone-100">Personal Projects</strong>, or working on my language skills{' '}
+        <strong className="text-stone-100">English, Tagalog, and Mandarin</strong>.
       </p>
     </>
   ),
@@ -104,16 +92,14 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Use this bio section as your way of describing yourself and saying what you do, what technologies you like
-  to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
-  in.`,
+  description: `I am a disciplined 3rd-year Computer Engineering student with a passion for bridging software capabilities with hardware execution. Proficient in TypeScript web frameworks and relational database architectures, I also enjoy prototyping with physical microcontroller configurations and optimizing systems for efficiency.`,
   aboutItems: [
-    {label: 'Location', text: 'Victoria, BC', Icon: MapIcon},
-    {label: 'Age', text: '29', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'Canadian / Irish', Icon: FlagIcon},
-    {label: 'Interests', text: 'Motorcycles, Muay Thai, Banjos', Icon: SparklesIcon},
-    {label: 'Study', text: 'University of Victoria', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Instant Domains, inc.', Icon: BuildingOffice2Icon},
+    {label: 'Location', text: 'Talisay City, Cebu, Philippines', Icon: MapIcon},
+    {label: 'Age', text: '22', Icon: CalendarIcon},
+    {label: 'Nationality', text: 'Filipino', Icon: FlagIcon},
+    {label: 'Interests', text: 'Pickleball, Personal Dev Projects, Tech Trends', Icon: SparklesIcon},
+    {label: 'Study', text: 'Cebu Institute of Technology - University', Icon: AcademicCapIcon},
+    {label: 'Employment', text: 'Student / OJT Applicant', Icon: BuildingOffice2Icon},
   ],
 };
 
@@ -129,12 +115,12 @@ export const skills: SkillGroup[] = [
         level: 10,
       },
       {
-        name: 'French',
-        level: 4,
+        name: 'Tagalog',
+        level: 8,
       },
       {
-        name: 'Spanish',
-        level: 3,
+        name: 'Mandarin',
+        level: 1,
       },
     ],
   },
@@ -142,15 +128,15 @@ export const skills: SkillGroup[] = [
     name: 'Frontend development',
     skills: [
       {
-        name: 'React',
+        name: 'Typescript',
         level: 9,
       },
       {
-        name: 'Typescript',
-        level: 7,
+        name: 'React',
+        level: 8,
       },
       {
-        name: 'GraphQL',
+        name: 'Tailwind CSS',
         level: 6,
       },
     ],
@@ -159,33 +145,33 @@ export const skills: SkillGroup[] = [
     name: 'Backend development',
     skills: [
       {
-        name: 'Node.js',
+        name: 'Supabase',
         level: 8,
       },
       {
-        name: 'Rust',
+        name: 'Node.js',
         level: 5,
       },
       {
-        name: 'Golang',
+        name: 'Rest APIs',
         level: 4,
       },
     ],
   },
   {
-    name: 'Mobile development',
+    name: 'Hardware Systems',
     skills: [
       {
-        name: 'React Native',
+        name: 'Microcontrollers',
         level: 9,
       },
       {
-        name: 'Flutter',
-        level: 4,
+        name: 'Circuit Layouts',
+        level: 7,
       },
       {
-        name: 'Swift',
-        level: 3,
+        name: 'Troubleshooting',
+        level: 6,
       },
     ],
   },
@@ -196,70 +182,22 @@ export const skills: SkillGroup[] = [
  */
 export const portfolioItems: PortfolioItem[] = [
   {
-    title: 'Project title 1',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Real-Time Security Object Tracking Framework (Theoretical Design)',
+    description: 'Architected a theoretical edge-computing system layout utilizing a YOLOv8-Nano object detection model intended for deployment on Raspberry Pi hardware. Compiled structural system architecture layouts and analytics models for pitch presentations.',
+    url: 'https://github.com/Grammerc',
     image: porfolioImage1,
   },
   {
-    title: 'Project title 2',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Remote Control Hardware Power Manager',
+    description: 'Engineered a functional physical automation route using an ESP32 microcontroller and the Telegram Bot API. Formulated a software-based Wake-on-LAN routing script to securely manage remote PC power cycles over a private connection.',
+    url: 'https://github.com/Grammerc',
     image: porfolioImage2,
   },
   {
-    title: 'Project title 3',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Smart Campus Space Finder Network Proposal',
+    description: 'Authored a comprehensive technical proposal and multi-node hardware sensor layout designed to monitor real-time classroom and study lounge occupancy statistics.',
+    url: 'https://github.com/Grammerc',
     image: porfolioImage3,
-  },
-  {
-    title: 'Project title 4',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage4,
-  },
-  {
-    title: 'Project title 5',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage5,
-  },
-  {
-    title: 'Project title 6',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage6,
-  },
-  {
-    title: 'Project title 7',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage7,
-  },
-  {
-    title: 'Project title 8',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage8,
-  },
-  {
-    title: 'Project title 9',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage9,
-  },
-  {
-    title: 'Project title 10',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage10,
-  },
-  {
-    title: 'Project title 11',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage11,
   },
 ];
 
@@ -268,39 +206,37 @@ export const portfolioItems: PortfolioItem[] = [
  */
 export const education: TimelineItem[] = [
   {
-    date: 'April 2007',
-    location: 'Clown college',
-    title: 'Masters in Beer tasting',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: '2023 - Present',
+    location: 'Cebu Institute of Technology - University',
+    title: 'Bachelor of Science in Computer Engineering (BSCpE)',
+    content: <p>Specializing in embedded hardware systems, circuit design, and full-stack application development. Active in laboratory research and technical projects.</p>,
   },
   {
-    date: 'March 2003',
-    location: 'School of Business',
-    title: 'What did you study 101',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: ' 2021 - 2023 ',
+    location: 'University of San Jose - Recoletos',
+    title: 'Science, Technology, Engineering, and Mathematics (STEM)',
+    content: <p>A dedicated student who exceled in Math and Sciences. </p>,
   },
 ];
 
 export const experience: TimelineItem[] = [
   {
-    date: 'March 2010 - Present',
-    location: 'Awesome Development Company',
-    title: 'Senior UX Engineer',
+    date: '2024 - 2025',
+    location: 'Cebu Institute of Technology - University',
+    title: 'Departmental Academic Distinction',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        Maintained a high academic standard, achieving consistent placement as a 2nd-Year Dean's Lister and Honor Roll awardee within the engineering department.
       </p>
     ),
   },
   {
-    date: 'March 2007 - February 2010',
-    location: 'Garage Startup Studio',
-    title: 'Junior bug fixer',
+    date: '2026',
+    location: 'Academic SaaS Application',
+    title: 'Full-Stack Developer & Database Designer',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        Contributed as a core developer for a specialized multi-tenant Software-as-a-Service (SaaS) platform built to track development workflows. Structured the relational database tables and designed the role-based access control (RBAC) layers for isolated data workspaces.
       </p>
     ),
   },
@@ -340,23 +276,23 @@ export const contact: ContactSection = {
   items: [
     {
       type: ContactType.Email,
-      text: 'reachout@timbaker.me',
-      href: 'mailto:reachout@timbaker.me',
+      text: 'rpma092@gmail.com',
+      href: 'mailto:rpma092@gmail.com',
     },
     {
       type: ContactType.Location,
-      text: 'Victoria BC, Canada',
-      href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
+      text: 'Talisay City, Cebu, Philippines',
+      href: 'https://www.google.com/maps/place/Talisay+City,+Cebu,+Philippines',
     },
     {
-      type: ContactType.Instagram,
-      text: '@tbakerx',
-      href: 'https://www.instagram.com/tbakerx/',
+      type: ContactType.Facebook,
+      text: 'Raphael Perocho',
+      href: 'https://facebook.com',
     },
     {
       type: ContactType.Github,
-      text: 'tbakerx',
-      href: 'https://github.com/tbakerx',
+      text: 'Grammerc',
+      href: 'https://github.com/Grammerc',
     },
   ],
 };
@@ -365,9 +301,7 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/tbakerx'},
-  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
+  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/Grammerc'},
   {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/'},
-  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/reactresume/'},
-  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
+  {label: 'Facebook', Icon: FacebookIcon, href: 'https://www.facebook.com/Raphhhyyy/'},
 ];
