@@ -4,6 +4,7 @@ import {
   BuildingOffice2Icon,
   CalendarIcon,
   FlagIcon,
+  GlobeAltIcon,
   MapIcon,
   SparklesIcon,
 } from '@heroicons/react/24/outline';
@@ -92,7 +93,7 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `I am a disciplined 3rd-year Computer Engineering student with a passion for bridging software capabilities with hardware execution. Proficient in TypeScript web frameworks and relational database architectures, I also enjoy prototyping with physical microcontroller configurations and optimizing systems for efficiency.`,
+  description: `Disciplined and detail-oriented Computer Engineering undergraduate with a strong foundation in full-stack web development, database management, and analog hardware configuration. Experienced in structuring multi-tenant relational database schemas, scripting dynamic gameplay state machines, and prototyping operational amplifier circuits. Proven academic diligence as a consistent Dean’s Lister, eager to apply technical skills in a practical engineering environment.`,
   aboutItems: [
     {label: 'Location', text: 'Talisay City, Cebu, Philippines', Icon: MapIcon},
     {label: 'Age', text: '22', Icon: CalendarIcon},
@@ -100,6 +101,7 @@ export const aboutData: About = {
     {label: 'Interests', text: 'Pickleball, Personal Dev Projects, Tech Trends', Icon: SparklesIcon},
     {label: 'Study', text: 'Cebu Institute of Technology - University', Icon: AcademicCapIcon},
     {label: 'Employment', text: 'Student / OJT Applicant', Icon: BuildingOffice2Icon},
+    {label: 'Portfolio', text: 'raphael-portfolio.netlify.app', Icon: GlobeAltIcon},
   ],
 };
 
@@ -182,21 +184,21 @@ export const skills: SkillGroup[] = [
  */
 export const portfolioItems: PortfolioItem[] = [
   {
-    title: 'Real-Time Security Object Tracking Framework (Theoretical Design)',
-    description: 'Architected a theoretical edge-computing system layout utilizing a YOLOv8-Nano object detection model intended for deployment on Raspberry Pi hardware. Compiled structural system architecture layouts and analytics models for pitch presentations.',
-    url: 'https://github.com/Grammerc',
+    title: 'DevFlow - Multi-Tenant Project (SaaS)',
+    description: 'A project management and work tracking web application featuring secure multi-tenant routing and role-based access control to isolate team development workflows.',
+    url: '/assets/project-placeholder.pdf',
     image: porfolioImage1,
   },
   {
-    title: 'Remote Control Hardware Power Manager',
-    description: 'Engineered a functional physical automation route using an ESP32 microcontroller and the Telegram Bot API. Formulated a software-based Wake-on-LAN routing script to securely manage remote PC power cycles over a private connection.',
-    url: 'https://github.com/Grammerc',
+    title: 'TypeSlasher - Typing Rogue-lite RPG Game',
+    description: 'A typing-based rogue-lite RPG game built in Godot Engine where progression mechanics and combat encounters are driven entirely by player typing input speed and accuracy.',
+    url: '/assets/project-placeholder.pdf',
     image: porfolioImage2,
   },
   {
-    title: 'Smart Campus Space Finder Network Proposal',
-    description: 'Authored a comprehensive technical proposal and multi-node hardware sensor layout designed to monitor real-time classroom and study lounge occupancy statistics.',
-    url: 'https://github.com/Grammerc',
+    title: 'Analog Temperature Monitoring & Automated Cooling System',
+    description: 'A purely analog, microcontroller-free physical hardware circuit that utilizes an operational amplifier to automatically trigger a cooling fan and buzzer based on real-time thermal shifts.',
+    url: '/assets/project-placeholder.pdf',
     image: porfolioImage3,
   },
 ];
