@@ -4,7 +4,6 @@ import {
   BuildingOffice2Icon,
   CalendarIcon,
   FlagIcon,
-  GlobeAltIcon,
   MapIcon,
   SparklesIcon,
 } from '@heroicons/react/24/outline';
@@ -95,13 +94,12 @@ export const aboutData: About = {
   profileImageSrc: profilepic,
   description: `Disciplined and detail-oriented Computer Engineering undergraduate with a strong foundation in full-stack web development, database management, and analog hardware configuration. Experienced in structuring multi-tenant relational database schemas, scripting dynamic gameplay state machines, and prototyping operational amplifier circuits. Proven academic diligence as a consistent Dean’s Lister, eager to apply technical skills in a practical engineering environment.`,
   aboutItems: [
-    { label: 'Location', text: 'Talisay City, Cebu, Philippines', Icon: MapIcon },
-    { label: 'Age', text: '22', Icon: CalendarIcon },
-    { label: 'Nationality', text: 'Filipino', Icon: FlagIcon },
-    { label: 'Interests', text: 'Pickleball, Personal Dev Projects, Tech Trends', Icon: SparklesIcon },
-    { label: 'Study', text: 'Cebu Institute of Technology - University', Icon: AcademicCapIcon },
-    { label: 'Employment', text: 'Student / OJT Applicant', Icon: BuildingOffice2Icon },
-    { label: 'Portfolio', text: 'raphael-portfolio.netlify.app', Icon: GlobeAltIcon },
+    {label: 'Location', text: 'Talisay City, Cebu, Philippines', Icon: MapIcon},
+    {label: 'Age', text: '22', Icon: CalendarIcon},
+    {label: 'Nationality', text: 'Filipino', Icon: FlagIcon},
+    {label: 'Interests', text: 'Pickleball, Personal Dev Projects, Tech Trends', Icon: SparklesIcon},
+    {label: 'Study', text: 'Cebu Institute of Technology - University', Icon: AcademicCapIcon},
+    {label: 'Employment', text: 'Student / OJT Applicant', Icon: BuildingOffice2Icon},
   ],
 };
 
@@ -278,8 +276,8 @@ export const contact: ContactSection = {
   items: [
     {
       type: ContactType.Email,
-      text: 'rpma092@gmail.com',
-      href: 'mailto:rpma092@gmail.com',
+      text: 'raphaelmatthew.perocho@gmail.com',
+      href: 'mailto:raphaelmatthew.perocho@gmail.com',
     },
     {
       type: ContactType.Location,
@@ -303,7 +301,7 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  { label: 'Github', Icon: GithubIcon, href: 'https://github.com/Grammerc' },
-  { label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/' },
-  { label: 'Facebook', Icon: FacebookIcon, href: 'https://www.facebook.com/Raphhhyyy/' },
+  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/Grammerc'},
+  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'www.linkedin.com/in/raphael-matthew-perocho-872a76412'},
+  {label: 'Facebook', Icon: FacebookIcon, href: 'https://www.facebook.com/Raphhhyyy/'},
 ];
