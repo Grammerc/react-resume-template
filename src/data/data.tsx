@@ -94,12 +94,12 @@ export const aboutData: About = {
   profileImageSrc: profilepic,
   description: `Disciplined and detail-oriented Computer Engineering undergraduate with a strong foundation in full-stack web development, database management, and analog hardware configuration. Experienced in structuring multi-tenant relational database schemas, scripting dynamic gameplay state machines, and prototyping operational amplifier circuits. Proven academic diligence as a consistent Dean’s Lister, eager to apply technical skills in a practical engineering environment.`,
   aboutItems: [
-    {label: 'Location', text: 'Talisay City, Cebu, Philippines', Icon: MapIcon},
-    {label: 'Age', text: '22', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'Filipino', Icon: FlagIcon},
-    {label: 'Interests', text: 'Pickleball, Personal Dev Projects, Tech Trends', Icon: SparklesIcon},
-    {label: 'Study', text: 'Cebu Institute of Technology - University', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Student / OJT Applicant', Icon: BuildingOffice2Icon},
+    { label: 'Location', text: 'Talisay City, Cebu, Philippines', Icon: MapIcon },
+    { label: 'Age', text: '22', Icon: CalendarIcon },
+    { label: 'Nationality', text: 'Filipino', Icon: FlagIcon },
+    { label: 'Interests', text: 'Pickleball, Personal Dev Projects, Tech Trends', Icon: SparklesIcon },
+    { label: 'Study', text: 'Cebu Institute of Technology - University', Icon: AcademicCapIcon },
+    { label: 'Employment', text: 'Student / OJT Applicant', Icon: BuildingOffice2Icon },
   ],
 };
 
@@ -272,7 +272,7 @@ export const testimonial: TestimonialSection = {
 
 export const contact: ContactSection = {
   headerText: 'Get in touch.',
-  description: 'Here is a good spot for a message to your readers to let them know how best to reach out to you.',
+  description: 'My additional details on how to contact me.',
   items: [
     {
       type: ContactType.Email,
@@ -301,7 +301,7 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/Grammerc'},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'www.linkedin.com/in/raphael-matthew-perocho-872a76412'},
-  {label: 'Facebook', Icon: FacebookIcon, href: 'https://www.facebook.com/Raphhhyyy/'},
+  { label: 'Github', Icon: GithubIcon, href: 'https://github.com/Grammerc' },
+  { label: 'LinkedIn', Icon: LinkedInIcon, href: 'www.linkedin.com/in/raphael-matthew-perocho-872a76412' },
+  { label: 'Facebook', Icon: FacebookIcon, href: 'https://www.facebook.com/Raphhhyyy/' },
 ];
